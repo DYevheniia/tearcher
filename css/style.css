@@ -86,7 +86,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: url(/img/teacher.png);
+    background-image: url(../img/teacher.png);
 
     background-repeat: no-repeat;
     background-size: 1800px;
