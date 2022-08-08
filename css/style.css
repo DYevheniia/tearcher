@@ -71,6 +71,8 @@ h1 {
     color: #000000;
     font-family: "Open Sans";
     text-align: center;
+    transition: 1s ease all;
+    
 }
 
 .header-line a:hover,
@@ -78,7 +80,6 @@ h1 {
     font-size: 13px;
     text-decoration: underline;
     color: #3f83bc;
-    font-weight: 600;
     font-family: "Open Sans";
 }
 
@@ -93,12 +94,18 @@ h1 {
     height: 600px;
 }
 
-.arrow-l,
-.arrow-r {
+.arrow-l, .arrow-r {
     border: 1px solid #ffffff;
+    width: 40px;
     border-radius: 50%;
-    padding: 10px 15px 7px;
+    padding: 10px 12px 7px;
     transition: 1s ease all;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.arrow-r{
+    padding: 10px 16px 7px;
 }
 
 .arrow-l:hover,
@@ -129,6 +136,7 @@ h1 {
     font-size: 14px;
     color: #ffffff;
     transition: 1s ease all;
+    border: 3px solid transparent;
 }
 
 .info a:hover{
@@ -188,6 +196,10 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.services-1 a{
+    text-decoration: none;
 }
 
 .book-image{
@@ -264,6 +276,10 @@ font-family: "Roboto";
 text-align: center;
 }
 
+.services-arrow-r,.services-arrow-l{
+    cursor: pointer;
+}
+
 
 
 
@@ -291,7 +307,8 @@ text-align: center;
 .portfolio ul {
     display: flex;
     justify-content: space-between;
-    padding: 0 600px;
+    width: 20%;
+    margin: 0 auto;
     list-style: none;
 }
 
@@ -307,15 +324,13 @@ text-align: center;
     padding: 5px 10px;
     margin-bottom: 20px;
     margin-top: 30px;
+    transition: 1s ease all;
 }
 
 .portfolio ul a:hover {
-    font-size: 14px;
     color: #ffffff;
-    font-weight: 400;
     background-color: #439eea;
-    border: #439eea;
-    transition: 1s ease all;
+    border:1px solid #439eea;
 }
 
 .portfolio-photo img {
@@ -337,13 +352,13 @@ text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     margin-bottom: 60px;
+    transition: 1s ease all;
 }
 
 .look a:hover {
     color: #ffffff;
     background-color: #439eea;
-    border: #439eea;
-    transition: 1s ease all;
+    border:1px solid #439eea;
 }
 
 .reviews {
@@ -365,6 +380,10 @@ text-align: center;
     margin: 35px;
 }
 
+.reviews-kate{
+    margin: 0 20px;
+}
+
 .reviews-kate img {
     width: 70px;
     border-radius: 50%;
@@ -379,6 +398,7 @@ text-align: center;
 .reviwes-arrow {
     width: 15px;
     height: 30px;
+    cursor: pointer;
 }
 
 .reviews-text p {
@@ -449,6 +469,7 @@ text-align: center;
     border: 2px solid #ffffff;
     padding: 12px 22px;
     margin-bottom: 60px;
+    transition: 1s ease all;
 }
 
 .help a:hover {
@@ -456,7 +477,6 @@ text-align: center;
     background-color: #f7f7f7;
     border-radius: 4px;
     border: 2px solid #f2f2f2;
-    transition: 1s ease all;
 }
 
 .footer-content {
@@ -514,6 +534,11 @@ text-align: center;
     font-size: 13px;
     color: #505050;
     font-weight: 400;
+    transition: 1s ease all;
+}
+
+.address address:hover{
+    color: #ffffff;
 }
 
 .contacts {
@@ -537,6 +562,11 @@ text-align: center;
     color: #505050;
     font-weight: 400;
     text-decoration: none;
+    transition: 1s ease all;
+} 
+
+.tel a:hover{
+    color: #ffffff;
 }
 
 .email img {
@@ -551,6 +581,11 @@ text-align: center;
     color: #505050;
     font-weight: 400;
     text-decoration: none;
+    transition: 1s ease all;
+}
+
+.email a:hover{
+    color: #ffffff;
 }
 
 .contact-1 a:hover,
